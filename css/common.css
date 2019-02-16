@@ -1,0 +1,28 @@
+/* 底部菜单 */
+#footer {
+	height: .41rem;
+	border-top: 1px solid #cbcbcb;
+	background: #fefefe;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+body {
+	padding-bottom: .42rem;
+}
+#footer a {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	color: #969696;
+	font-size: .08rem;
+}
+#footer a i {
+	color: #747474;
+	font-size: .17rem;
+}

@@ -1,0 +1,27 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img , textarea,select{ margin:0; padding:0; }
+body{font:.12rem "微软雅黑","Arial Narrow",HELVETICA;background:#fff;}
+a{font-size:.12rem;color:#777;text-decoration:none; cursor: pointer;}
+a:hover{text-decoration:none}
+li {
+	list-style: none;
+}
+h1,h2,h3,h4,h5,h6,strong {
+	font-weight: normal;
+}
+input {
+	outline: none;
+}
+.clearfix:after {
+	content: ' ';
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+img {
+	border: 0;
+	display: block;
+}
+/* png图片bug */
+.alpha{display:none;_display:inline-block;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/sjqu.png",sizingMethod="scale");width:93px;height:26px;}
+.ie6hidden{_display:none;}
