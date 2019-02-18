@@ -88,21 +88,21 @@ header .left i {
 	border-bottom: .02rem solid #ff5f16;
 }
 /*wrap*/
-.nowPlayingList-wrap {
+.nowPlayingList-wrap, .comingSoonList-wrap {
 	box-sizing: border-box;
 }
 /*ul*/
-.nowPlayingList {
+.nowPlayingList ,.comingSoonList {
 	margin-left:.15rem;
 }
 /*ul li*/
-.nowPlayingList .nowPlayingFilm-item {
+.nowPlayingList .nowPlayingFilm-item , .comingSoonList .comingSoonFilm-item{
 	padding: .15rem .15rem .15rem 0;
 	height: .9rem;
 	border-bottom: 1px solid #C2C2C2;
 }
 /*ul li a*/
-.nowPlayingFilm-wrap {
+.nowPlayingFilm-wrap , .comingSoonFilm-wrap{
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -110,18 +110,18 @@ header .left i {
 	align-items: center;
 }
 /*正在热映 影片图片*/
-.nowPlayingFilm-wrap .nowPlayingFilm-img {
+.nowPlayingFilm-wrap .nowPlayingFilm-img ,.comingSoonFilm-wrap .comingSoonFilm-img {
 	height: 100%;
 }
-.nowPlayingFilm-wrap .nowPlayingFilm-img img {
+.nowPlayingFilm-wrap .nowPlayingFilm-img img ,.comingSoonFilm-wrap .comingSoonFilm-img img{
 	height: 100%;
 }
 /*正在热映 影片信息*/
-.nowPlayingFilm-wrap .nowPlayingFilm-info {
+.nowPlayingFilm-wrap .nowPlayingFilm-info ,.comingSoonFilm-wrap .comingSoonFilm-info {
 	padding: 0 .1rem;
 }
 /*正在热映 影片信息 影片名*/
-.nowPlayingFilm-info .nowPlayingFilm-name .name {
+.nowPlayingFilm-info .nowPlayingFilm-name .name , .comingSoonFilm-info .comingSoonFilm-name .name {
 	color: #191a1b;
     font-size: .16rem;
     height: .22rem;
@@ -129,19 +129,19 @@ header .left i {
     margin-right: .05rem;
 }
 /*省略号*/
-.nowPlayingFilm-info .info-col {
+.nowPlayingFilm-info .info-col ,.comingSoonFilm-info .info-col{
 	width: 2rem;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
 }
 /*正在热映 影片信息公共样式*/
-.nowPlayingFilm-info .label {
+.nowPlayingFilm-info .label ,.comingSoonFilm-info .label {
     font-size: .13rem;
     color: #797d82;
 }
 /*2D*/
-.nowPlayingFilm-info .nowPlayingFilm-name .item {
+.nowPlayingFilm-info .nowPlayingFilm-name .item ,.comingSoonFilm-info .comingSoonFilm-name .item{
 	font-size: .09rem;
     color: #fff;
     background-color: #d2d6dc;
@@ -151,12 +151,12 @@ header .left i {
     border-radius: .02rem;
 }
 /*评分*/
-.nowPlayingFilm-info .grade {
+.nowPlayingFilm-info .grade ,.comingSoonFilm-info .grade{
 	font-size: .16rem;
     color: #ffb232
 }
 /*购票*/
-.nowPlayingFilm-buy {
+.nowPlayingFilm-buy  ,.comingSoonFilm-buy{
 	line-height: .25rem;
     height: .25rem;
     width: .5rem;

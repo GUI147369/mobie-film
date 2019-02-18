@@ -1,40 +1,92 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
-		<link rel="stylesheet" type="text/css" href="lib/layui/css/layui.css" />
-		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/city.css" />
-		<title>好影票</title>
-		<script>
-			document.documentElement.style.fontSize = document.documentElement.clientWidth / 3.6 + "px";
-		</script>
-	</head>
-	<body>
-		<div class="city-list">
-			<div class="header">
-				<div class="left"><i class="iconfont icon-fork"></i></div>
-				<div class="title">
-					当前城市 -
-				</div>
-			</div>
-			<div class="search-city-input">
-				<div class="input-wrap">
-					<i class="iconfont icon-fangdajing"></i>
-					<input type="text" placeholder="输入城市名或拼音" class="search-input">
-					<div class="clean-icon">
-						
-					</div>
-				</div>
-				<div class="cancel-btn">取消</div>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+	<link rel="stylesheet" type="text/css" href="lib/layui/css/layui.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/city.css" />
+	<title>好影票</title>
+	<script>
+		document.documentElement.style.fontSize = document.documentElement.clientWidth / 3.6 + "px";
+	</script>
+</head>
+
+<body>
+	<div class="city-list">
+		<!-- 头部当前城市 -->
+		<div class="header">
+			<div class="left"><i class="iconfont icon-fork"></i></div>
+			<div class="title">
+				当前城市 -
 			</div>
 		</div>
+		<!-- 搜索框 -->
+		<div class="search-city-input">
+			<div class="input-wrap">
+				<i class="iconfont icon-fangdajing"></i>
+				<input type="text" placeholder="输入城市名或拼音" class="search-input">
+				<div class="clean-icon">
+					<i class="iconfont icon-fork"></i>
+				</div>
+			</div>
+			<div class="cancel-btn">取消</div>
+		</div>
+		<!-- 城市列表 -->
+		<div class="city-list-wrap">
+			<!-- 按字母排序 -->
+			<ul class="city-list-content">
+				<!-- GPS定位 热门城市 -->
+				<div class="recommend-city">
+					<div class="gps-city">
+						<div class="city-index-title">GPS定位你所在城市</div>
+						<ul class="city-index-detail cleanfix">
+							<li class="city-item-detail city-item-detail-gprs">
+								<div class="city-item-text">定位失败</div>
+							</li>
+						</ul>
+					</div>
+					<div class="hot-city">
+						<div class="city-index-title">热门城市</div>
+						<ul class="city-index-detail cleanfix">
+							<li class="city-item-detail">
+								<div class="city-item-text">北京</div>
+							</li>
+							<li class="city-item-detail">
+								<div class="city-item-text">上海</div>
+							</li>
+							<li class="city-item-detail">
+								<div class="city-item-text">广州</div>
+							</li>
+							<li class="city-item-detail">
+								<div class="city-item-text">深圳</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 每个按字母排序的城市 -->
+				<li class="city-index-section">
+					<p class="city-index-letter">A</p>
+					<ul>
+						<li class="city-item-detail"><div class="city-item-text">安山</div></li>
+						<li class="city-item-detail"><div class="city-item-text">安庆</div></li>
+						<li class="city-item-detail"><div class="city-item-text">安阳</div></li>
+						<li class="city-item-detail"><div class="city-item-text">安顺</div></li>
+						<li class="city-item-detail"><div class="city-item-text">安康</div></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- 26个字母 -->
+			<div class="city-item-nav">
+
+			</div>
+		</div>
+	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="lib/layui/layui.js"></script>
-	<script src="js/home.js"></script>
-	</body>
+</body>
 
 </html>

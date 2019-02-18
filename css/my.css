@@ -1,0 +1,95 @@
+/* 头像 */
+html,body {
+  background: #f4f4f4;
+}
+.avatar {
+  height: 1.4rem;
+  background: url(../images/center-bg.png);
+  background-size: 100%  1.4rem;
+  padding: .2rem 0 0 .2rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: .14rem;
+}
+.avatar .avatar-img {
+  width:.6rem;
+  height: .6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: .2rem
+}
+.avatar .avatar-img img {
+  width: 100%;
+  height: 100%;
+}
+/* 选项卡 */
+.my-order-tab  {
+  width: 100%;
+  height: .7rem;
+  background: #ffffff;
+  display: flex;
+  padding: .14rem;
+  box-sizing: border-box;
+  margin-bottom: .1rem;
+}
+.my-order-tab  li {
+  width: 50%;
+  height: 100%;
+  align-self: center;
+}
+.my-order-tab  li a {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.my-order-tab  li a i {
+  font-size: .20rem;
+  color: #ffc82d;
+}
+.my-order-tab  li a .icon-ziyuan {
+  color : #c6da5c;
+}
+.my-order-tab  li a p {
+  color: #797d82;
+}
+/* option */
+.option {
+  padding: .14rem .2rem;
+  background: #ffffff;
+  margin-bottom: .02rem;
+}
+.option a {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.option a span {
+  width: 80%;
+  padding-left: .1rem;
+}
+.option a i:first-of-type {
+  font-size: .20rem;
+}
+.option a .icon-qia {
+  color: #ffa68e;
+}
+.option a .icon-yue {
+  color: #ffbc4b;
+}
+.option a .diff {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  font-size: .14rem;
+}
+.option a .icon-shezhi {
+  color: #c1d267;
+}
+.option a i:last-of-type {
+  font-size: .10rem;
+}

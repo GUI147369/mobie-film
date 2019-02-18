@@ -49,3 +49,60 @@ $(function(){
 		}
 	})
 })
+new Vue({
+	el : '.main',
+	data : {
+		msg : '我是根实例',
+		curTab : '正在热映',
+		nowFilmList : [
+			{
+				id : 1,
+				url:'images/nowfilm/1.jpg',
+				name:'流浪地球',
+				type:'2D',
+				grade : '7',
+				actor:'郭帆 屈楚萧 李光洁 吴孟达  赵今麦',
+				time : '100分钟',
+				place: '中国大陆',
+			},
+			{
+				id : 2,
+				url:'images/nowfilm/1.jpg',
+				name:'流浪地球',
+				type:'2D',
+				grade : ' ',
+				actor:'郭帆 屈楚萧 李光洁 吴孟达  赵今麦',
+				time : '100分钟',
+				place: '中国大陆',
+			},
+			{
+				id : 3,
+				url:'images/nowfilm/1.jpg',
+				name:'流浪地球',
+				type:'2D',
+				grade : '7',
+				actor:'郭帆 屈楚萧 李光洁 吴孟达  赵今麦',
+				time : '100分钟',
+				place: '中国大陆',
+			}
+		],
+		soonFilmList : [
+			{
+				id : 1,
+				url:'images/coming-soon/1.jpg',
+				name:'流浪地球',
+				type:'2D',
+				grade : '&nbsp',
+				actor:'郭帆 屈楚萧 李光洁 吴孟达  赵今麦',
+				time : '100分钟',
+				place: '中国大陆',
+			},
+		]
+	},
+	methods : {
+		tabChange(tab){
+			//console.log(list)
+			this.curTab = tab
+		}
+	}
+})
